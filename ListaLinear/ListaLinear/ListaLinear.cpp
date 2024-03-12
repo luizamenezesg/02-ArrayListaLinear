@@ -103,7 +103,29 @@ void inserirElemento()
 }
 
 // deve ser implementada como resposta ao exercicio
+//modificado
+
+
 void buscarElemento()
 {
+	bool encontrado = false;
+	int numeroDigitado;
+	cout << "Digite um numero:";
+	cin >> numeroDigitado;
+
+
+	for (int i = 0; i < nElementos; i++)
+	{
+		if (lista[i] == numeroDigitado)
+		{
+			cout << "Esse numero foi encontrado na posicao: " << i << endl;
+			encontrado = true;
+		}
+	}
+
+	if (encontrado == false) {
+		cout << "Nenhum numero compativel";
+	}
 
 }
+
